@@ -1,0 +1,1 @@
+import{_ as a}from"./nuxt-link.30bbaeac.js";import{_ as n,c as r,b as c,w as s,C as _,d as e,o as d}from"./entry.acdcd3de.js";const l={};function f(t,i){const o=a;return d(),r("div",null,[c(o,{to:"/"},{default:s(()=>[e("Voltar")]),_:1}),_(t.$slots,"default"),e(" Rodapé de Exibição ")])}const u=n(l,[["render",f]]);export{u as default};

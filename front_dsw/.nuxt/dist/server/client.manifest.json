@@ -1,0 +1,18 @@
+{
+  "@vite/client": {
+    "prefetch": true,
+    "isEntry": true,
+    "file": "@vite/client",
+    "css": [],
+    "module": true,
+    "resourceType": "script"
+  },
+  "C:/Users/victo/OneDrive/Documentos/GitHub/Automatizacao-de-Irrigacao_Front-End/front_dsw/node_modules/nuxt/dist/app/entry.js": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "isEntry": true,
+    "file": "C:/Users/victo/OneDrive/Documentos/GitHub/Automatizacao-de-Irrigacao_Front-End/front_dsw/node_modules/nuxt/dist/app/entry.js"
+  }
+}

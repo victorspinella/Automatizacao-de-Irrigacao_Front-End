@@ -1,0 +1,5 @@
+const cadastro_vue_vue_type_style_index_0_scoped_b41a439e_lang = ".titulo[data-v-b41a439e]{align-self:center;font-size:x-large;font-weight:700}.page-container[data-v-b41a439e]{align-items:center;height:110vh;justify-content:flex-start}.login-container[data-v-b41a439e],.page-container[data-v-b41a439e]{display:flex;flex-direction:column}.login-container[data-v-b41a439e]{border:1px solid #ccc;border-radius:5px;margin:5% auto auto;padding:20px;width:400px}.form[data-v-b41a439e]{align-items:baseline;display:flex;flex-direction:column}.label[data-v-b41a439e]{margin-bottom:8px;margin-left:5%}.input[data-v-b41a439e]{border:2px solid #000;border-radius:5px;margin-bottom:16px;padding:8px}.button[data-v-b41a439e],.input[data-v-b41a439e]{align-self:center;width:90%}.button[data-v-b41a439e]{background-color:#007bff;border:none;border-radius:5px;color:#fff;cursor:pointer;margin:10px;padding:5px;transition:background-color .3s ease}.button[data-v-b41a439e]:hover{background-color:#75aae2}";
+export {
+  cadastro_vue_vue_type_style_index_0_scoped_b41a439e_lang as default
+};
+//# sourceMappingURL=cadastro-styles-1.mjs-393975d7.js.map

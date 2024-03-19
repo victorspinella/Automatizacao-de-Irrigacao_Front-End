@@ -1,0 +1,6 @@
+const index_vue_vue_type_style_index_0_scoped_5c9241cf_lang = ".titulo[data-v-5c9241cf]{align-self:center;font-size:x-large;font-weight:700}.page-container[data-v-5c9241cf]{align-items:center;height:100vh;justify-content:flex-start}.login-container[data-v-5c9241cf],.page-container[data-v-5c9241cf]{display:flex;flex-direction:column}.login-container[data-v-5c9241cf]{border:1px solid #ccc;border-radius:5px;margin:5% auto auto;padding:20px;width:400px}.form[data-v-5c9241cf]{align-items:baseline;display:flex;flex-direction:column}.label[data-v-5c9241cf]{margin-bottom:8px;margin-left:5%}.input[data-v-5c9241cf]{border:2px solid #000;border-radius:5px;margin-bottom:16px;padding:8px}.button[data-v-5c9241cf],.input[data-v-5c9241cf]{align-self:center;width:90%}.button[data-v-5c9241cf]{background-color:#007bff;border:none;border-radius:5px;color:#fff;cursor:pointer;margin:10px;padding:5px;transition:background-color .3s ease}.button[data-v-5c9241cf]:hover{background-color:#75aae2}";
+
+const indexStyles_d93f7be8 = [index_vue_vue_type_style_index_0_scoped_5c9241cf_lang, index_vue_vue_type_style_index_0_scoped_5c9241cf_lang];
+
+export { indexStyles_d93f7be8 as default };
+//# sourceMappingURL=index-styles.d93f7be8.mjs.map

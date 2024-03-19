@@ -28,62 +28,73 @@
     </div>
 </template>
   
-<script setup>
+<script>
 
 import { reactive } from 'vue';
 import { useRouter } from 'vue-router';
 import axios from 'axios';
+import { ref } from 'vue';
+import { userStore } from 'vuex';
 
-const router = useRouter();
+export default {
 
-
-const data = reactive({
-    loginUser: '',
-    senha: '',
-    senhaConfirmation: ''
-});
-
-const cadastroUsuario = async () => {
-    try {
-
-        const response = await axios.post('http://localhost:5000/auth/register', {
-            login: data.loginUser,
-            senha: data.senha,
-            senhaConfirmation: data.senhaConfirmation
-        });
-
-
-        if (response.status === 201) {
-
-            const token = response.data.token;
-
-            window.alert("Cadastro realizado com sucesso")
-
-            localStorage.setItem('token', token);
-
-            irParaLogin();
-        } else {
-            console.error('Falha no login');
-            // Tratar falha no login, exibir mensagem de erro, etc.
-        }
-    } catch (error) {
-
-        if (error.response.status === 422) {
-            window.alert("Login já existe")
-        }
-
-        if (error.response.status === 423) {
-            window.alert("Senhas não coicidem")
-        }
-
+    setup() {
+        const login_form = ref ({})
+        const register_form = ref ({})
+        const store = userStore; 
     }
-};
+}
+
+// const router = useRouter();
+
+
+// const data = reactive({
+//     loginUser: '',
+//     senha: '',
+//     senhaConfirmation: ''
+// });
+
+// const cadastroUsuario = async () => {
+//     try {
+
+//         const response = await axios.post('http://localhost:5000/auth/register', {
+//             login: data.loginUser,
+//             senha: data.senha,
+//             senhaConfirmation: data.senhaConfirmation
+//         });
+
+
+//         if (response.status === 201) {
+
+//             const token = response.data.token;
+
+//             window.alert("Cadastro realizado com sucesso")
+
+//             localStorage.setItem('token', token);
+
+//             irParaLogin();
+//         } else {
+//             console.error('Falha no login');
+//             // Tratar falha no login, exibir mensagem de erro, etc.
+//         }
+//     } catch (error) {
+
+//         if (error.response.status === 422) {
+//             window.alert("Login já existe")
+//         }
+
+//         if (error.response.status === 423) {
+//             window.alert("Senhas não coicidem")
+//         }
+
+//     }
+// };
 
 
 
-const irParaLogin = () => {
-    router.push('/');
-};
+// const irParaLogin = () => {
+//     router.push('/');
+// };
 
 
 </script>
