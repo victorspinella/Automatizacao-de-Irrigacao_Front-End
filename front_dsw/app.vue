@@ -4,7 +4,7 @@
     <router-link to="/status"> Status </router-link> |
     <router-link to="/register"> Register </router-link> |
     <router-link to="/sign-in"> Login </router-link> |
-    <button @click="handleSignOut">Sign out</button>
+    <button @click="handleSignOut" v-if="isLoggedIn">Sign out</button>
   </nav>
   <router-view />
   <!-- <div>
@@ -16,11 +16,26 @@
 
 <script setup>
 import { onMounted, ref } from "vue";
+import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
 
-const is LoggedIn = ref(false);
+const isLoggedIn = ref(false);
+
+let auth;
+onMounted(() => {
+  auth = getAuth();
+  onAuthStateChanged(auth, (user) => {
+    if (user) {
+      isLoggedIn.value = true;
+    } else {
+      isLoggedIn.value = false;
+    }
+  });
+});
 
 const handleSignOut = () => {
-
+  signOut(auth).then(() => {
+    router.push("/");
+  });
 };
 
 </script>
